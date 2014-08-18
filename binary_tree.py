@@ -10,8 +10,6 @@ Output:
 def binary_search(lst, lo, hi, target):
     if hi - lo <= 1:
         return lst[lo] == target or lst[hi] == target
-    if hi - lo == 1:
-        pdb.set_trace()
     mid = (hi + lo)/2 
     if target < lst[mid]:
         return binary_search(lst, lo, mid, target)
